@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #fff;
+  --link: #3c5089;
+  --theme: #ebebeb;
+  --font: #121212;
+}
+
+[data-theme="dark"] {
+  --background: #121212;
+  --link: #6e82bb;
+  --theme: #1c1c1c;
+  --font: #fff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.App {
+  background-color: var(--background);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.nav-header {
+  color: var(--font);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.g-logo {
+  height: 60px;
+}
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 964px;
+  place-items: center;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.article-image {
+  width: 300px;
+  height: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .nav-header {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .nav-header {
+    font-size: 18px;
+  }
+}
